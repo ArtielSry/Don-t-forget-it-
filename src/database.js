@@ -1,6 +1,7 @@
 const mongoose = require('mongoose');
 
-const URI = 'mongodb+srv://crudMe:crud1234567890@crud.wi8qxce.mongodb.net/?retryWrites=true&w=majority';
+//my MongoDB account
+const URI = 'mongodb+srv://****:****************.net/?retryWrites=true&w=majority';
 
 mongoose.set('strictQuery', true);
 mongoose.connect(URI)
