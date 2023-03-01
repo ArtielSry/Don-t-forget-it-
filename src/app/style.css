@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+:root {
+    --mainColor: rgba(74, 115, 237, 0.842); 
+    --mainColorHover:rgb(63, 98, 204); 
+    --mainBack: rgb(225, 225, 225);
+}
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+.app__container {
+    width: 100%;
+    padding: 1.4em;
+    text-align: center;
+    background-color: var(--mainColor );
+}
+
+h1 {
+    color: rgb(255, 255, 255);
+}
+
+/*--------------------------*/
+
+.main__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+}
+
+.task__card {
+    width: 600px;
+}
+
+.task__card form {
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+}
+
+.task__card input, textarea {
+    padding: 10px;
+    padding: 10px;
+    margin-top: 20px;
+    border: 1px solid rgb(186, 186, 186);
+}
+
+.task__card .button {
+    color: white;
+    cursor: pointer;
+    background-color: var(--mainColor );
+    border: 1px solid var(--mainColor );
+    border-radius: 0 0 5px 10px;
+    height: 40px;
+    margin-top: 20px;
+    transition: 0.2s ease all;
+}
+
+.task__card .button:hover {
+    transition: 0.2s ease all;
+    background-color: var(--mainColorHover);
+}
+
+/* ------------------------- */
+
+.tasks__container {
+    width: 600px;
+}
+
+.task__button {
+    display: flex;
+    flex-direction:column;
+    justify-content: space-around;
+}
+
+
+
+.task__top h2 {
+    padding: 10px; 
+}
+
+.task__body {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 600px;
+}
+
+.task__buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+
+   
+}
+.task__buttons button {
+    cursor: pointer;
+    width: 50px;
+    height: 40px;
+    background-color: var(--mainColor);
+    margin: 5px;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    transition: 0.2s ease all;
+}
+.task__buttons button:hover{
+    transition: 0.2s ease all;
+    background-color: var(--mainColorHover);
+}
+
+
+.task__text {
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 5px;
+    background-color: var(--mainBack);
+
+    transition: 0.2s ease all;
+}
+.task__text td {
+    padding: 10px;
+    
+}
+
+.task__title, .task__description {
+    text-align: left;
+    width: 300px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.toast {
+    width: 150px;
+    height: 50px;
+
+    background-color: var(--mainBack);
+    border-radius: 40px;
+    margin: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+
+    right: 150px;
+    top: 250px !important;
+
+    transition: 0.2s ease all;
+}
